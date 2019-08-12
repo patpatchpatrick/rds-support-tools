@@ -33,8 +33,9 @@ logger=logging.getLogger()
 logger.setLevel(logging.INFO)
 
 def make_connection():
-    return pymysql.connect(host=endpoint, user=dbuser, passwd=password,
-        port=int(port), db=database, autocommit=True)
+    return pymysql.connect(host="ivdb1.cnqmayxyzeiv.us-west-1.rds.amazonaws.com", 
+                           user="padmin", passwd="VzeroViv4176!",
+        port=int("3306"), db="ivdbanalysis", autocommit=True)
 
 def log_err(errmsg):
     logger.error(errmsg)
