@@ -27,7 +27,7 @@ dbuser=environ.get('DBUSER')
 password=environ.get('DBPASSWORD')
 database=environ.get('DATABASE')
 
-query="SELECT * FROM amzn.serverless_test LIMIT 2"
+query="SELECT * FROM ivdbanalysis.stocks"
 
 logger=logging.getLogger()
 logger.setLevel(logging.INFO)
